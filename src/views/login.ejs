@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./components/head') %>
+
+    <body>
+        <%- include('./components/nav') %>
+            <div class="container vh-100">
+                <div class="row h-75 justify-content-center align-items-center">
+                    <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5">
+
+                        <form action="#" method="post" data-aos="fade-up" data-aos-delay="300" role="form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                   <input class="form-control"
+                                        type="text" name="username" placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                   <input class="form-control"
+                                        type="password" name="password" placeholder="Password">
+                                </div>
+                            </div>
+                            <button class="btn w-100 text-white" type="submit" style="background-color: #daa520;" >Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('./components/scripts') %>
+    </body>
+
+</html>
