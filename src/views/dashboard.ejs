@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dashboard - Brand</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/mine.css">
 </head>
 
 <body id="page-top">
@@ -56,7 +54,7 @@
                                             <div class="text-uppercase text-success text-xs mb-1">
                                                 <span>Number of Companies</span>
                                             </div>
-                                            <div class="text-dark h5 mb-0"><span>100</span></div>
+                                            <div class="text-dark h5 mb-0"><span>9</span></div>
                                         </div>
                                         <div class="col-auto">
                                         </div>
@@ -89,61 +87,14 @@
                                                 <span>Actions</span>
                                             </div>
                                             <div class="text-dark h5 mb-0">
-                                                <button class="btn btn-sm btn-info">Add Company</button>
-                                                <button class="btn btn-sm btn-outline-info">Add Admin</button>
+                                                <button type="button" class="btn btn-sm btn-info" data-toggle="modal"
+                                                    data-target="#portfolioModal">Add Portfolio</button>
+                                                <button class="btn btn-sm btn-info">Add Image</button>
                                             </div>
                                         </div>
                                         <div class="col-auto">
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- about -->
-                <div class="container-fluid d-flex flex-column col-md-10 col-lg-8 mt-4">
-                    <div class="row">
-                        <div class="col-lg-12 mb-4">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="text-info font-weight-bold mt-2">About</h6>
-                                </div>
-                                <div class="container">
-                                    <form action="#" method="post" class="px-5 py-3">
-                                        <div class="form-group">
-                                            <label for="heading" class="font-weight-bold">Heading</label>
-                                            <input class="form-control" type="text" name="heading" id="heading" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="about" class="font-weight-bold">Content</label>
-                                            <textarea class="form-control" name="about" id="about" cols="30"
-                                                rows="10"></textarea>
-                                        </div>
-                                        <button class="btn btn-sm btn-info">Save</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- message from ceo -->
-                <div class="container-fluid d-flex flex-column col-md-10 col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12 mb-4">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="text-info font-weight-bold mt-2">Message from CEO</h6>
-                                </div>
-                                <div class="container">
-                                    <form action="#" method="post" class="px-5 py-3">
-                                        <div class="form-group">
-                                            <label for="about" class="font-weight-bold">Content</label>
-                                            <textarea class="form-control" name="about" id="about" cols="30"
-                                                rows="10"></textarea>
-                                        </div>
-                                        <button class="btn btn-sm btn-outline-info">Save</button>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -156,30 +107,75 @@
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <div class="row justify-content-between px-3">
-                                        <h6 class="text-info font-weight-bold mt-2">Todo List</h6>
-                                        <button class="btn btn-sm btn-info">Add Todo</button>
+                                        <h6 class="text-info font-weight-bold mt-2">Add Image to Portfolio</h6>
+                                    </div>
+                                </div>
+                                <div class="row h-75 justify-content-center align-items-center my-5">
+                                    <div class="col-10">
+                                        <form action="./add_image" method="post" data-aos="fade-up"
+                                            data-aos-delay="300" role="form">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <select name="pfolio_name" class="form-control">
+                                                        <% if (all_pfolios) { %>
+                                                            <% all_pfolios.map(item => { %>
+                                                                <option value="<%= item.pfolio_name %>"><%= item.pfolio_name %></option>
+                                                           <% }) %>
+                                                        <% }%>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="file" name="pfolio_image"
+                                                        placeholder="Portfolio Category">
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-sm btn-info" type="submit">Add Portfolio</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid d-flex flex-column col-md-10 col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12 mb-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <div class="row justify-content-between px-3">
+                                        <h6 class="text-info font-weight-bold mt-2">Portfolios</h6>
                                     </div>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col mr-2">
-                                                <h6 class="mb-0">Lunch Meeting</h6><span class="text-xs">12:30 AM</span>
-                                            </div>
-                                            <div class="col-auto">
-                                                <div class="custom-control custom-checkbox"><input
-                                                        class="custom-control-input" type="checkbox"
-                                                        id="formCheck-3"><label class="custom-control-label"
-                                                        for="formCheck-3"></label></div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <form action="#" method="post">
-                                                    <button class="btn btn-sm btn-link text-danger"
-                                                        type="submit">x</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    <% if (all_pfolios.length> 0) { %>
+                                        <% all_pfolios.map(item=> { %>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-center no-gutters">
+                                                    <div class="col mr-2">
+                                                        <h6 class="mb-0"><a href="#">
+                                                                <%= item.pfolio_name %>
+                                                            </a></h6><span class="text-xs">
+                                                            <%= item.images %> Images
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="col-auto">
+                                                        <form action="./delete/<%= item.id %>" method="post">
+                                                            <button class="btn btn-sm btn-link text-danger"
+                                                                type="submit">x</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <% }) %>
+                                                <% } else { %>
+                                                    <div class="container">
+                                                        <p class="my-3 lead">No portfolios added yet</p>
+                                                    </div>
+                                                    <% }%>
                                 </ul>
                             </div>
                         </div>
@@ -188,9 +184,42 @@
             </div>
         </div>
     </div>
+
+    <!-- modals -->
+    <!-- portfolio modal -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title lead">Add Portfolio</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row h-75 justify-content-center align-items-center">
+                        <div class="col-12">
+                            <form action="./add_pfolio" method="post" data-aos="fade-up" data-aos-delay="300"
+                                role="form">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" name="pfolio_name"
+                                            placeholder="Portfolio Category">
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm btn-info" type="submit">Add Portfolio</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end portfolio modal -->
+    <!-- end modals -->
+
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/theme.js"></script>
 </body>
 
 </html>

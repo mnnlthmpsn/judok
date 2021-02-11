@@ -1,10 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./components/head') %>
-<body>
-    <%- include('./components/nav') %>
-    <%- include(`${template}`) %>
-    <%- include('./components/footer') %>
-    <%- include('./components/scripts') %>
-</body>
+
+<%- include('./components/head') %>
+
+
+    <body>
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 d-flex align-items-center">
+                        <!-- <h1 class="logo mr-auto"><a href="index.html">Judok<span>.</span></a></h1> -->
+                        <a href="/" class="logo mr-auto"><img src="/img/logo.png" alt=""></a>
+
+                        <nav class="nav-menu d-none d-lg-block">
+                            <ul>
+                                <li class="active"><a href="#header">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav><!-- .nav-menu -->
+
+                        <a href="#about" class="get-started-btn scrollto">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </header><!-- End Header -->
+
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex align-items-center">
+
+            <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <h1>Experience Professionalism with Judok</h1>
+                                <h2>We are team of talented Professionals, bringing your ideas to life</h2>
+                                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- End Hero -->
+
+        <main id="main">
+            <!-- ======= About Section ======= -->
+            <section id="about" class="about section-bg">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="row no-gutters">
+                        <div class="content col-xl-5 d-flex align-items-stretch">
+                            <div class="content">
+                                <h3>Professionalism & Creating Value</h3>
+                                <p>
+                                    Here at Judok, we understand how stressful and frustrating it can be getting things done
+                                    how you expect. Look no further, we uphold our customers in high esteem,
+                                    executing tasks entrusted to us, with Speed and a touch of Perfection
+                                </p>
+                                <a href="#contact" class="about-btn scrollto"><span>Let's get talking. Help us help you</span> <i
+                                        class="bx bx-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 d-flex align-items-stretch">
+                            <div class="icon-boxes d-flex flex-column justify-content-center">
+                                <div class="row">
+                                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                        <i class="bx bx-receipt"></i>
+                                        <h4>Professionalism</h4>
+                                        <p class="text-white">We have a knack for perfection. That is what we do</p>
+                                    </div>
+                                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                                        <i class="bx bx-cube-alt"></i>
+                                        <h4>Creativity</h4>
+                                        <p class="text-white">We know how to blow your minds. You're just a call away</p>
+                                    </div>
+                                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                                        <i class="bx bx-time"></i>
+                                        <h4>Speed</h4>
+                                        <p class="text-white">We know how precious your time is. We will work within that limit</p>
+                                    </div>
+                                    <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                                        <i class="bx bx-money"></i>
+                                        <h4>Affordability</h4>
+                                        <p class="text-white">Wondering how we deliver quality services at affordable prices? That's just what we do</p>
+                                    </div>
+                                </div>
+                            </div><!-- End .content-->
+                        </div>
+                    </div>
+
+                </div>
+            </section><!-- End About Section -->
+
+            <!-- ======= Counts Section ======= -->
+            <section id="counts" class="counts">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="count-box">
+                                <i class="icofont-simple-smile"></i>
+                                <span data-toggle="counter-up">232</span>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                            <div class="count-box">
+                                <i class="icofont-bank"></i>
+                                <span data-toggle="counter-up">9</span>
+                                <p>Companies</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                            <div class="count-box">
+                                <i class="icofont-live-support"></i>
+                                <span data-toggle="counter-up">24</span>
+                                <p>Hours Of Support</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                            <div class="count-box">
+                                <i class="icofont-users-alt-5"></i>
+                                <span data-toggle="counter-up">15</span>
+                                <p>Hard Workers</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section><!-- End Counts Section -->
+
+            <!-- ======= Tabs Section ======= -->
+            <section id="tabs" class="tabs">
+                <div class="container" data-aos="fade-up">
+
+                    <ul class="nav nav-tabs row d-flex">
+                        <li class="nav-item col-3">
+                            <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+                                <i class="ri-customer-service-line"></i>
+                                <h4 class="d-none d-lg-block">Professionalism</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" data-toggle="tab" href="#tab-2">
+                                <i class="ri-creative-commons-by-line"></i>
+                                <h4 class="d-none d-lg-block">Creativity</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" data-toggle="tab" href="#tab-3">
+                                <i class="ri-speed-line"></i>
+                                <h4 class="d-none d-lg-block">Speed</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item col-3">
+                            <a class="nav-link" data-toggle="tab" href="#tab-4">
+                                <i class="ri-money-dollar-box-line"></i>
+                                <h4 class="d-none d-lg-block">Affordability</h4>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-1">
+                            <div class="row">
+                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up"
+                                    data-aos-delay="100">
+                                    <h3>What we mean by "Professionalism"</h3>
+                                    <p class="font-italic">
+                                        Professionalism is our moral value. It isn't our business tactic. We ensure consistency
+                                        in the quality of products and services we offer our clients. 
+                                    </p>
+                                    <ul>
+                                        <li><i class="ri-check-double-line"></i> We have strong regard and respect for your ideas</li>
+                                        <li><i class="ri-check-double-line"></i> We commit fully and follow through with our commitments</li>
+                                        <li><i class="ri-check-double-line"></i> You can count on as to deliver and deliver well</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                    data-aos-delay="200">
+                                    <img src="/img/tabs-1.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-2">
+                            <div class="row">
+                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                                    <h3>What we mean by "Creativity"</h3>
+                                    <p class="font-italic">
+                                        Purpose-driven, Discipline and Adaptability is what we mean by creativity
+                                    </p>
+                                    <ul>
+                                        <li><i class="ri-check-double-line"></i> We answer the Whys and Whats and commit till we achieve what's desired</li>
+                                        <li><i class="ri-check-double-line"></i> With our creative team, we assign unflinching attention in achieving results</li>
+                                        <li><i class="ri-check-double-line"></i> Whatever your need may be, Let's get talking</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                    <img src="/img/tabs-2.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-3">
+                            <div class="row">
+                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                                    <h3>What we mean by "Speed"</h3>
+                                    <p>
+                                        We know how precious your time is. Time is money and time well utilized equals profit earned.
+                                        Let's get your ideas kicking in time
+                                    </p>
+                                    <ul>
+                                        <li><i class="ri-check-double-line"></i> You have an idea in mind, let's get it growing quickly</li>
+                                        <li><i class="ri-check-double-line"></i> You want us to execute a task for you? Let's get started</li>
+                                        <li><i class="ri-check-double-line"></i> Time is essential in our line of work</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                    <img src="/img/tabs-3.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-4">
+                            <div class="row">
+                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                                    <h3>What we mean by "Affordability"</h3>
+                                    <p class="font-italic">
+                                        You are not required to pay up front when you don't have the means. Our team will help you
+                                        with a payment plan. When payment is done, you can go home with whatever service or product 
+                                        you want. 
+                                    </p>
+                                    <ul>
+                                        <li><i class="ri-check-double-line"></i> Flexible payment plans and schedults</li>
+                                        <li><i class="ri-check-double-line"></i> High quality and luxurios products and services at affordable rates</li>
+                                        <li><i class="ri-check-double-line"></i> We have everyone in mind. Come closer let's work something out</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                    <img src="/img/tabs-4.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section><!-- End Tabs Section -->
+
+            <!-- ======= Services Section ======= -->
+            <section id="services" class="services section-bg ">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <h2>Companies</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                                <i class="icofont-designfloat"></i>
+                                <h4><span>JK Interior Decor</span></h4>
+                                <p>Our Interior Decor wing creates and execute quality and beautiful furnishing and interior designs for 
+                                    your homes and offices
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                                <i class="icofont-water-drop"></i>
+                                <h4><span>JK Plumbing</span></h4>
+                                <p>For all your plumbing works, JK Plumbing is the right company to provide this service. Let's get
+                                    talking
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                                <i class="icofont-power-zone"></i>
+                                <h4><span>JK Electrical Works</span></h4>
+                                <p>We have a high grade and professional electrical team and experts to sort out all your electrical
+                                    needs
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                                <i class="icofont-recycle"></i>
+                                <h4><span>JK Renovation Services</span></h4>
+                                <p>Our Renovations team is noted for adding a touch of perfection to your homes, schools, offices
+                                    and wherever you may need us
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+                                <i class="icofont-under-construction"></i>
+                                <h4><span>JK Building Material Supplies</span></h4>
+                                <p>Looking for affordable yet quality supplies to finish that building project, you're just a 
+                                    call away
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+                                <i class="icofont-farmer"></i>
+                                <h4><span>Judok Farms</span></h4>
+                                <p>We won't leave you out on your own when it comes to Agriculture. Help us help you</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="700">
+                                <i class="icofont-island"></i>
+                                <h4><span>Judok Real Estates</span></h4>
+                                <p>What if we told you we sell Litigation free lands with no disputes and lawsuits at affordable prices? 
+                                    Well, you're at the right place
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="800">
+                                <i class="icofont-fast-delivery"></i>
+                                <h4><span>Judok Delivery Services</span></h4>
+                                <p>From small to large to medium to extra large deliveries, relax and leave the hardwork and lifting to us
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="900">
+                                <i class="icofont-money-bag"></i>
+                                <h4><span>Judok Mobile Money Services</span></h4>
+                                <p>For quality and customer oriented mobile services, Visit our Mobile Money agents nationwide</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section><!-- End Services Section -->
+
+            <!-- ======= Portfolio Section ======= -->
+            <section id="portfolio" class="portfolio">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <h2>Portfolio</h2>
+                        <p>Some of our Works</p>
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <ul id="portfolio-flters">
+                                <li data-filter="*" class="filter-active">All</li>
+                                <li data-filter=".filter-app">App</li>
+                                <li data-filter=".filter-card">Card</li>
+                                <li data-filter=".filter-web">Web</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src="/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 1</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery"
+                                            class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                    <div class="portfolio-links">
+                                        <a href="/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery"
+                                            class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src="/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 2</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery"
+                                            class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                            <div class="portfolio-wrap">
+                                <img src="/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Card 2</h4>
+                                    <p>Card</p>
+                                    <div class="portfolio-links">
+                                        <a href="/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery"
+                                            class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Web 2</h4>
+                                    <p>Web</p>
+                                    <div class="portfolio-links">
+                                        <a href="/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery"
+                                            class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src="/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 3</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery"
+                                            class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                            <div class="portfolio-wrap">
+                                <img src="/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Card 1</h4>
+                                    <p>Card</p>
+                                    <div class="portfolio-links">
+                                        <a href="/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery"
+                                            class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                            <div class="portfolio-wrap">
+                                <img src="/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Card 3</h4>
+                                    <p>Card</p>
+                                    <div class="portfolio-links">
+                                        <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery"
+                                            class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                    <div class="portfolio-links">
+                                        <a href="/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery"
+                                            class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" title="More Details"><i
+                                                class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section><!-- End Portfolio Section -->
+
+            <!-- ======= Testimonials Section ======= -->
+            <section id="testimonials" class="testimonials">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Testimonials</h2>
+                        <p>This is what some of our clients have said about our Products and Services</p>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+
+                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-xl-10">
+                            <div class="owl-carousel testimonials-carousel">
+
+                                <div class="testimonial-wrap">
+                                    <div class="testimonial-item">
+                                        <h3>Saul Goodman</h3>
+                                        <p>
+                                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+                                            Maecen aliquam, risus at semper.
+                                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-wrap">
+                                    <div class="testimonial-item">
+                                        <h3>Saul Goodman</h3>
+                                        <p>
+                                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+                                            Maecen aliquam, risus at semper.
+                                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-wrap">
+                                    <div class="testimonial-item">
+                                        <h3>Saul Goodman</h3>
+                                        <p>
+                                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+                                            Maecen aliquam, risus at semper.
+                                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-wrap">
+                                    <div class="testimonial-item">
+                                        <h3>Saul Goodman</h3>
+                                        <p>
+                                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+                                            Maecen aliquam, risus at semper.
+                                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-wrap">
+                                    <div class="testimonial-item">
+                                        <h3>Saul Goodman</h3>
+                                        <p>
+                                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+                                            Maecen aliquam, risus at semper.
+                                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section><!-- End Testimonials Section -->
+
+            
+           
+            <!-- ======= Contact Section ======= -->
+            <section id="contact" class="contact">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <h2>Contact</h2>
+                        <p>Leave Us a message or tell us what you think. We'll get back to you shortly</p>
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                        <div class="col-lg-6">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="info-box">
+                                        <i class="bx bx-map"></i>
+                                        <h3>Our Address</h3>
+                                        <p>Awoshie-Anyaa, Accra, Ghana</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-box mt-4">
+                                        <i class="bx bx-envelope"></i>
+                                        <h3>Email Us</h3>
+                                        <p>info@judokgroup.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-box mt-4">
+                                        <i class="bx bx-phone-call"></i>
+                                        <h3>Call Us</h3>
+                                        <p>+233 548 557 822  </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <form action="#" method="post">
+                                <div class="form-row">
+                                    <div class="col form-group">
+                                        <input type="text" name="name" class="form-control" id="name"
+                                            placeholder="Your Name" data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars"/>
+                                    </div>
+                                    <div class="col form-group">
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="Your Email" data-rule="email"
+                                            data-msg="Please enter a valid email" />
+                                        <div class="validate"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                        placeholder="Subject" data-rule="minlen:4"
+                                        data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                        data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="text-center"><button type="submit" class="btn" style="background-color: #daa520; color: white;">Send Message</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section><!-- End Contact Section -->
+
+        </main><!-- End #main -->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h3>Judok<span>.</span></h3>
+                            <p>
+                                Awoshie-Anyaa <br>
+                                Accra<br>
+                                Ghana <br><br>
+                                <strong>Phone:</strong> +233 548 557 822<br>
+                                <strong>Email:</strong> info@judokgroup.com<br>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#header" class="scrollto">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#about" class="scrollto">About us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#services" class="scrollto">Services</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#portfolio" class="scrollto">Portfolio</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Companies</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> JK Interior Decor</li>
+                                <li><i class="bx bx-chevron-right"></i> JK Plumbing</li>
+                                <li><i class="bx bx-chevron-right"></i> JK Electrical Works</li>
+                                <li><i class="bx bx-chevron-right"></i> JK Renovation Services</li>
+                                <li><i class="bx bx-chevron-right"></i> JK Building Material Supplies</li>
+                                <li><i class="bx bx-chevron-right"></i> Judok Farms</li>
+                                <li><i class="bx bx-chevron-right"></i> Judok Real Estates</li>
+                                <li><i class="bx bx-chevron-right"></i> Judok Delivery Services</li>
+                                <li><i class="bx bx-chevron-right"></i> Judok Mobile Money Services</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 footer-newsletter">
+                            <h4>Join Our Newsletter</h4>
+                            <p>Be up to date with news and new feautures by subscribing for our Newsletters</p>
+                            <form action="#" method="post">
+                                <input type="email" name="email"><input type="submit" value="Subscribe" disabled>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+
+        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+        <%- include('./components/scripts') %>
+
+    </body>
+
 </html>

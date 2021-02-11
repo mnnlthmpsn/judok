@@ -9,8 +9,7 @@ const authorization = async (req, res, next) => {
   
       next();
     } catch (err) {
-      console.log('jwt failed here')
-      res.redirect("/")
+      res.redirect("/admin")
     }
   };
   
